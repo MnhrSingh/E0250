@@ -12,7 +12,7 @@ import sys,os
 
 
 model=nn.Sequential(nn.Linear(10,2000),nn.ReLU(),nn.Linear(2000,4))
-model.load_state_dict(torch.load('model.pth'))
+model.load_state_dict(torch.load('Model/model.pth'))
 file=open(sys.argv[2],'r')
 tmp=file.read().split('\n')
 inp=[]
